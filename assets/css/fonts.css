@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Atlantic Cruise";
+    src: url("../fonts/Atlantic_Cruise.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Libre Baskerville";
+    src: url("../fonts/LibreBaskerville-Regular.woff2") format("woff2");
+}
+
+h1, .title {
+    @apply text-title lg:text-title-big font-title text-text-light tracking-titles leading-title;
+}
+
+h2, .subtitle {
+    @apply text-subtitle lg:text-subtitle-big font-light text-text-dark font-subtitle tracking-titles leading-subtitle;
+}
+
+p, .text {
+    @apply text-base lg:text-base font-normal font-text text-text-dark tracking-normal leading-normal;
+}
