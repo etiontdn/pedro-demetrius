@@ -1,5 +1,5 @@
 <template>
-  <div>asdasdasdasd</div>
+  <div>Mudança no Texto</div>
 </template>
 
 <script>
