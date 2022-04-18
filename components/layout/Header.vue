@@ -1,1 +1,5 @@
-<template><div>Header</div></template>
+<template>
+  <header>
+    <Title></Title>
+  </header>
+</template>
