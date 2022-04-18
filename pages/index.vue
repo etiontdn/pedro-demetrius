@@ -1,5 +1,7 @@
 <template>
-  <div>Mudança no Texto</div>
+  <div>
+    <TitularDestaque></TitularDestaque>
+  </div>
 </template>
 
 <script>

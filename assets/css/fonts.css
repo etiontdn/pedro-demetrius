@@ -24,3 +24,7 @@ h2, .subtitle {
 p, .text {
     @apply text-base lg:text-base font-normal font-text text-text-dark tracking-normal leading-normal;
 }
+
+.indent-start {
+    text-indent: 12px;
+}
