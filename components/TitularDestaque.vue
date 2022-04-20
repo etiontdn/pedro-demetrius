@@ -8,7 +8,7 @@
       />
     </figure>
     <h2 class="subtitle mb-1">Título do Destaque</h2>
-    <p class="text text-justify indent-start">
+    <p class="text text-justify indent-start mb-2">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
       lacinia dolor. Phasellus imperdiet dictum est id tempor. Nunc congue
       sapien a orci placerat ultrices. Phasellus eu enim a nunc scelerisque
@@ -18,6 +18,7 @@
       sit amet eros. In ut arcu in diam blandit fringilla. Phasellus ac nibh id
       mi tincidunt commodo.
     </p>
+    <NuxtLink class="link flex justify-end bounce-around-hover" :to="'#'"><span class="">Veja mais</span> <Icon class="mt-px h-6 w-6 -translate-x-px" icon="chevron-right"></Icon></NuxtLink>
   </div>
 </template>
 <script>

@@ -1,0 +1,25 @@
+@keyframes bounce-around {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+
+    90% {
+        transform: translateY(1px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bounce-around {
+    animation: bounce-around 0.3s;
+}
+
+.bounce-around-hover:hover {
+    animation: bounce-around 0.3s;
+}

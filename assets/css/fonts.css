@@ -21,7 +21,7 @@ h2, .subtitle {
     @apply text-subtitle lg:text-subtitle-big font-light text-text-dark font-subtitle tracking-titles leading-subtitle;
 }
 
-p, .text {
+p, .text, NuxtLink, a, .link {
     @apply text-base lg:text-base font-normal font-text text-text-dark tracking-normal leading-normal;
 }
 
