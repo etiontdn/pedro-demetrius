@@ -1,10 +1,15 @@
 <template>
-    <img :src="'/icons/' + icon + '.svg'">
+    <img :src="requireIcon">
 </template>
 <script>
 export default {
   props: {
     icon: String,
   },
+  computed: {
+    requireIcon() {
+      return require(`../assets/icons/${this.icon}.svg`)
+    }
+  }
 }
 </script>

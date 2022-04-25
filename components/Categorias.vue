@@ -1,13 +1,12 @@
-<template><div>Disenhos, Fotos y Videos</div>
-  
+<template>
+  <section class="flex flex-col gap-4">
+    <Disenhos></Disenhos><Videos></Videos><Fotos></Fotos>
+  </section>
 </template>
 
 <script>
-export default {
-
-}
+export default {}
 </script>
 
 <style>
-
 </style>
