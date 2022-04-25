@@ -1,6 +1,6 @@
 <template>
   <section class="flex flex-col gap-4">
-    <Disenhos></Disenhos><Videos></Videos><Fotos></Fotos>
+    <Disenhos></Disenhos><Fotos></Fotos><Videos></Videos>
   </section>
 </template>
 

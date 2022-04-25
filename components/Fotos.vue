@@ -1,3 +1,3 @@
 <template>
-    <Categoria catImg="disenhos.jpg">Fotos</Categoria>
+    <Categoria link="/fotos" catImg="fotos.jpg">Fotos</Categoria>
 </template>

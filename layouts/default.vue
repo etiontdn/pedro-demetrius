@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main max-w-[1080px] m-auto">
     <LayoutHeader></LayoutHeader>
     <div class="content">
       <Nuxt></Nuxt>
