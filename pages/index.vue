@@ -12,21 +12,14 @@
 export default {
   name: 'Inicial',
 
-  data() {
-    return {
-      posts: [],
-    }
-  },
-
-  async AsyncData({ $content }) {
-    const posts = await $content("blog").fetch();
-
-    return {
-      posts,
-    };
+  async asyncData({ $content }) {
+    const posts = await $content('blog').fetch()
+    return { posts }
   },
 
   mounted() {
+
+
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
         if (!user) {
