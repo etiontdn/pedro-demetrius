@@ -6,20 +6,55 @@ publish_mode: editorial_workflow
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 site_url: https://hilarious-smakager-a0a86f.netlify.app
-locale: 'pt '
+locale: "pt "
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
     label: "Blog" # Used in the UI
     folder: "content/blog" # The path to the folder where the documents are stored
-    format: 'frontmatter'
+    format: "frontmatter"
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    editor: 
+    editor:
       preview: false
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Categoria",
+          name: "category",
+          widget: "select",
+          options:
+            [
+              { label: "Diseños", value: "disenos" },
+              { label: "Fotos", value: "fotos" },
+              { label: "Videos", value: "videos" },
+            ],
+        }
+      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "datos_personales"
+    label: "Datos Personales"
+    folder: "content/dados"
+    format: "frontmatter"
+    create: false
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Foto", name: "photo", widget: "image" }
+      - { label: "Email", name: "email", widget: "string" }
+      - { label: "Telefono", name: "phone", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "pensamiento"
+    label: "Pensamientos Flotantes"
+    folder: "content/pensamientos"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }

@@ -2,9 +2,6 @@
   <div class="flex flex-col gap-4">
     <TitularDestaque></TitularDestaque>
     <Categorias></Categorias>
-    <li v-for="post of posts" :key="post.slug">
-      <NuxtLink :to="post.slug">{{ post.title }}</NuxtLink>
-    </li>
   </div>
 </template>
 
@@ -12,10 +9,7 @@
 export default {
   name: 'Inicial',
 
-  async asyncData({ $content }) {
-    const posts = await $content('blog').fetch()
-    return { posts }
-  },
+
 
   mounted() {
 

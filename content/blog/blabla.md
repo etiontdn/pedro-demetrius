@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: Blabla
+title: Diseños
 date: 2022-06-16T20:29:02.914Z
 thumbnail: /images/uploads/disenhos.jpg
 ---
