@@ -68,7 +68,12 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Title", name: "title", widget: "hidden" }
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          default: "Thumbnails",
+        }
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Imagen de Diseños", name: "disenos", widget: "image" }
       - { label: "Imagen de Fotos", name: "fotos", widget: "image" }
