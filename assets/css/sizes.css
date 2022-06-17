@@ -1,0 +1,9 @@
+html {
+    font-size: clamp(14px, 4.44vw, 18px);
+}
+
+@media only screen and (min-width: 1280) {
+    html {
+        font-size: clamp(14px, 1.25vw, 18px);
+    }
+}

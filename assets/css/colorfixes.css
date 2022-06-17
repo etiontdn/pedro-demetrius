@@ -1,3 +1,10 @@
+:root {
+    --orange: #FAA726;
+    --green: #E0F1E1;
+    --white: #FAFAFA;
+}
+
+
 .test {
     border: 2px solid tomato;
 }
