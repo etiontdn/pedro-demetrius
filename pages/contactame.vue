@@ -9,7 +9,7 @@
     <div class="center-photo flex justify-center">
       <Photo class="w-[10rem] h-[10rem]"></Photo>
     </div>
-    <nuxt-content :document="datos" class="text">
+    <nuxt-content :document="datos" class="text text-justify">
 
     </nuxt-content>
     <h2 class="subtitle">

@@ -11,7 +11,7 @@
             <img class="w-full" :src="post.thumbnail" alt="Paisagem Bela" />
         </figure>
         <p class="text italic !text-gray-500">
-            Fecha de publicación: {{ post.date.slice(0, 10) }}
+            Fecha de publicación: {{ $convertDate(this.post.date.slice(0, 10)) }}
         </p>
         <nuxt-content class="w-full text text-justify" :document="post"></nuxt-content>
     </div>
@@ -24,6 +24,17 @@ export default {
         const post = await $content("blog").where({ "slug": postSlug }).limit(1).fetch();
 
         return { post: post[0] }
+    },
+
+    computed: {
+        fechaPublicacion() {
+            const fecha = this.post.date.slice(0, 10).split("-")
+            const anos = fecha[0]
+            const meses = fecha[1]
+            const dias = fecha[2]
+
+            return `${dias}/${meses}/${anos}`
+        }
     }
 }
 </script>

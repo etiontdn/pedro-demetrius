@@ -15,7 +15,7 @@
                 {{ post.title }}
             </h2>
             <p class="text italic !text-gray-500">
-                {{ post.date.slice(0, 10) }}
+                {{ $convertDate(post.date.slice(0, 10)) }}
             </p>
             <nuxt-content class="w-full limit-size text text-justify" :document="post"></nuxt-content>
             <NuxtLink class="mt-2 link flex justify-end bounce-around-hover" :to="'/blog/' + post.slug"><span
@@ -34,6 +34,17 @@ export default {
         const posts = await $content("blog").sortBy('date', 'desc').fetch();
 
         return { posts }
+    },
+
+    computed: {
+        fechaPublicacion() {
+            const fecha = this.post.date.slice(0, 10).split("-")
+            const anos = fecha[0]
+            const meses = fecha[1]
+            const dias = fecha[2]
+
+            return `${dias}/${meses}/${anos}`
+        }
     }
 }
 </script>
