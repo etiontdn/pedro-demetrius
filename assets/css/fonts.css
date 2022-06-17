@@ -25,6 +25,13 @@ p, .text, NuxtLink, a, .link {
     @apply text-base lg:text-base font-normal font-text text-text-dark tracking-normal leading-normal;
 }
 
+.limit-size {
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    height: 12em;
+}
+
 .indent-start {
     text-indent: 12px;
 }

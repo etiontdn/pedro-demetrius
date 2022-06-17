@@ -6,7 +6,7 @@
     <div class="lg:w-1/2">
       <h2 class="subtitle mb-1">{{ lastPost.title }}</h2>
       <p class="text text-justify indent-start mb-2">
-        <nuxt-content :document="lastPost"></nuxt-content>
+        <nuxt-content class="limit-size" :document="lastPost"></nuxt-content>
       </p>
       <NuxtLink class="link flex justify-end bounce-around-hover" :to="'/blog/' + lastPost.slug"><span class="">Veja
           mais</span>
