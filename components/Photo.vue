@@ -1,7 +1,7 @@
 <template>
-    <figure v-visible="photo" class="h-full">
+    <NuxtLink to="/contactame" v-visible="photo" class="h-full">
         <img class="h-full" :src="photo" alt="Foto Pedro Demetrius">
-    </figure>
+    </NuxtLink>
 </template>
 <script>
 export default {

@@ -1,10 +1,16 @@
 <template>
     <div class="flex flex-col gap-4 px-3">
-        <div class="nav-head flex items-center">
-            <NuxtLink to="/" class="go-back -translate-y-1">
-                <Icon icon="chevron-right" class="h-[2.25rem] w-[2.25rem] scale-[-1]"></Icon>
-            </NuxtLink>
-            <h1 class="title">Archivo</h1>
+        <div class="relative pb-2 after:contents after:border-b-4 after:border-primary-green/90 after:absolute after:left-0 after:bottom-0
+        after:h-px after:w-2/3 lg:after:w-1/4">
+            <div class="nav-head flex items-center">
+                <NuxtLink to="/" class="go-back -translate-y-1">
+                    <Icon icon="chevron-right" class="h-[2.25rem] w-[2.25rem] scale-[-1]"></Icon>
+                </NuxtLink>
+                <h1 class="title">Archivo</h1>
+            </div>
+            <p class="text px-px text-justify">
+                {{ description }}
+            </p>
         </div>
 
         <div class="mb-2" v-for="post of posts" :key="post.slug">
@@ -32,8 +38,9 @@
 export default {
     async asyncData({ params, $content }) {
         const posts = await $content("blog").where({ 'category': params.categoria }).sortBy('date', 'desc').fetch();
-
-        return { posts }
+        let description = await $content("thumbnails").fetch();
+        description = description[0]['description_' + params.categoria];
+        return { posts, description }
     },
 }
 </script>

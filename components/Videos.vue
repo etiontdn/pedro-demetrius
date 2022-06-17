@@ -1,7 +1,7 @@
 <template>
     <div>
         <Categoria v-visible="image" link="/archivo/videos" :catImg="image">Videos</Categoria>
-        <p class="text px-3 pt-1">
+        <p class="text px-3 text-justify pt-1">
             {{ description }}
         </p>
     </div>
