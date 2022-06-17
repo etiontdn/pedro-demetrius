@@ -12,6 +12,8 @@ export default {
     async fetch() {
         const thumbnail = await this.$content("thumbnails").sortBy('date', 'desc').limit(1).fetch()
         this.image = thumbnail[0].disenos
-    }
+    },
+
+    fetchKey: 'categoria-disenos',
 }
 </script>
