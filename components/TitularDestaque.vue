@@ -1,5 +1,5 @@
 <template>
-  <div v-show="lastPost" class="flex flex-col lg:flex-row lg:gap-4  px-3">
+  <div v-visible="lastPost" class="flex flex-col lg:flex-row lg:gap-4  px-3">
     <figure class="w-full lg:w-1/2 mb-3">
       <img class="w-full" :src="lastPost.thumbnail" alt="Paisagem Bela" />
     </figure>

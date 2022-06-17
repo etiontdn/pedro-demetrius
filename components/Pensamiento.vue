@@ -1,5 +1,5 @@
 <template>
-    <div v-show="pensamiento" class="
+    <div v-visible="pensamiento" class="
         w-full
         h-[3.5rem]
         bg-primary-green

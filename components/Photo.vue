@@ -1,5 +1,5 @@
 <template>
-    <figure v-show="photo" class="h-full">
+    <figure v-visible="photo" class="h-full">
         <img class="h-full" :src="photo" alt="Foto Pedro Demetrius">
     </figure>
 </template>

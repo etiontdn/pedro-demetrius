@@ -28,9 +28,9 @@ module.exports = {
       },
       fontSize: {
         subtitle: '1.75rem',
-        title: '2.626rem',
+        title: '2.45rem',
         'subtitle-big': '2.25rem',
-        'title-big': '4.5rem'
+        'title-big': '3rem'
       },
       letterSpacing: {
         titles: '0.04em'

@@ -1,5 +1,5 @@
 <template>
-    <Categoria v-show="image" link="/archivo/videos" :catImg="image">Videos</Categoria>
+    <Categoria v-visible="image" link="/archivo/videos" :catImg="image">Videos</Categoria>
 </template>
 
 <script>
