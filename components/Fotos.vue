@@ -1,5 +1,8 @@
 <template>
-    <Categoria v-visible="image" link="/archivo/fotos" :catImg="image">Fotos</Categoria>
+    <div>
+        <Categoria v-visible="image" link="/archivo/fotos" :catImg="image">Fotos</Categoria>
+        <p class="text px-3 pt-1"></p>
+    </div>
 </template>
 
 <script>
