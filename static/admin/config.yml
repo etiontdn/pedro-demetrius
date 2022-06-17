@@ -58,3 +58,16 @@ collections:
     fields:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "thumbnails"
+    label: "Imagenes de Exibición"
+    folder: "content/thumbnails"
+    format: "frontmatter"
+    create: false
+    slug: "{{year}}-{{month}}-{{day}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Imagen de Diseños", name: "disenos", widget: "image" }
+      - { label: "Imagen de Fotos", name: "fotos", widget: "image" }
+      - { label: "Imagen de Videos", name: "videos", widget: "image" }
