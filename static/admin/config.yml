@@ -77,19 +77,19 @@ collections:
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Imagen de Diseños", name: "disenos", widget: "image" }
       - {
-          label: "Descripción de Diseños",
+          label: "Descripcion de Diseños",
           name: "description_disenos",
           widget: "string",
         }
       - { label: "Imagen de Fotos", name: "fotos", widget: "image" }
       - {
-          label: "Descripción de Diseños",
+          label: "Descripcion de Fotos",
           name: "description_fotos",
           widget: "string",
         }
       - { label: "Imagen de Videos", name: "videos", widget: "image" }
       - {
-          label: "Descripción de Diseños",
+          label: "Descripcion de Videos",
           name: "description_videos",
           widget: "string",
         }
