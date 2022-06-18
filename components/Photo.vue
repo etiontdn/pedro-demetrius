@@ -1,5 +1,5 @@
 <template>
-    <NuxtLink to="/contactame" v-visible="photo" class="h-full">
+    <NuxtLink to="/contactame" v-visible="photo" class="h-full animate-clicked-on">
         <img class="h-full" :src="photo" alt="Foto Pedro Demetrius">
     </NuxtLink>
 </template>

@@ -1,7 +1,10 @@
 <template>
     <div v-visible="pensamiento" class="
         w-full
-        h-[3.5rem]
+        px-2
+        py-4
+
+        text-center
         bg-primary-green
         flex
         justify-center

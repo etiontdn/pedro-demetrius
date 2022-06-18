@@ -4,9 +4,9 @@
       Que hago
     </h2>
     <div class="flex flex-col gap-4 lg:flex-row lg:gap-2">
-      <Disenhos></Disenhos>
-      <Fotos></Fotos>
-      <Videos></Videos>
+      <Disenhos class="lg:w-1/3"></Disenhos>
+      <Fotos class="lg:w-1/3"></Fotos>
+      <Videos class="lg:w-1/3"></Videos>
     </div>
   </section>
 </template>

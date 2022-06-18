@@ -18,6 +18,12 @@ export default {
         }
       });
     }
+  },
+
+  head() {
+    return {
+      title: "Pedro Demetrio"
+    }
   }
 }
 </script>
