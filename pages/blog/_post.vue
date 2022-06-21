@@ -57,7 +57,7 @@ export default {
     },
 
     head() {
-        return { title: `Pedro Demetrio - ${this.post.title}` }
+        return { title: `Pedro Demetrius - ${this.post.title}` }
     }
 }
 </script>

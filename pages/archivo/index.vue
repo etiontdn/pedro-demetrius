@@ -47,7 +47,7 @@ export default {
     },
 
     head() {
-        return { title: `Pedro Demetrio - Archivo` }
+        return { title: `Pedro Demetrius - Archivo` }
     }
 }
 </script>

@@ -52,7 +52,7 @@ export default {
   },
 
   head() {
-    return { title: `Pedro Demetrio - Quien soy` }
+    return { title: `Pedro Demetrius - Quien soy` }
   }
 }
 </script>

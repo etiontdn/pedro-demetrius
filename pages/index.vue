@@ -22,7 +22,7 @@ export default {
 
   head() {
     return {
-      title: "Pedro Demetrio"
+      title: "Pedro Demetrius"
     }
   }
 }
